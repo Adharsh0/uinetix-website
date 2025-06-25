@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <div className="breaking-wrapper1">
-      <section className="hero-section1">
+      <section className="hero-section1" id='about'>
         <div className="hero-diagonal1"></div>
         <div className="hero-content1">
           <div className="hero-left1">
