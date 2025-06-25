@@ -1,29 +1,70 @@
-// components/Services.jsx
 import React from 'react';
 import './Services.css';
-import webDevGif from '../assets/webdev.gif';
-import appDevGif from '../assets/appdev.gif';
+import webDevGif from '../assets/web-dev.gif';
+import appDevGif from '../assets/app-dev.gif';
 import designGif from '../assets/graphic.gif';
+import uiuxGif from '../assets/uiux-gif.gif';
+import { 
+  Code, 
+  Cpu, 
+  Palette,
+  Layout,
+  ArrowRight,
+  Zap,
+  CircleDashed,
+  Figma,
+  Smartphone
+} from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       title: "Web Development",
-      description: "Custom websites with cutting-edge performance",
+      description: "Custom websites with cutting-edge performance and modern technologies",
       gif: webDevGif,
-      side: "right"
+      side: "right",
+      Icon: () => (
+        <div className="icon-container web-icon">
+          <Code size={20} className="main-icon" />
+          <CircleDashed size={36} className="orbit-icon" />
+        </div>
+      )
     },
     {
       title: "App Development",
-      description: "Mobile experiences that users love",
+      description: "Mobile experiences that users love with native performance",
       gif: appDevGif,
-      side: "left"
+      side: "left",
+      Icon: () => (
+        <div className="icon-container app-icon">
+          <Smartphone size={20} className="main-icon" />
+          <Zap size={24} className="spark-icon" />
+        </div>
+      )
     },
     {
       title: "Graphic Design",
-      description: "Visuals that communicate your brand story",
+      description: "Visuals that communicate your brand story effectively",
       gif: designGif,
-      side: "right"
+      side: "right",
+      Icon: () => (
+        <div className="icon-container design-icon">
+          <Palette size={20} className="main-icon" />
+          <div className="paint-splatter"></div>
+        </div>
+      )
+    },
+    {
+      title: "UI/UX Design",
+      description: "Crafting intuitive interfaces for seamless user journeys",
+      gif: uiuxGif,
+      side: "left",
+      Icon: () => (
+        <div className="icon-container uiux-icon">
+          <Layout size={20} className="main-icon" />
+          <Figma size={24} className="corner-icon" />
+        </div>
+      )
     }
   ];
 
@@ -32,9 +73,15 @@ const Services = () => {
       <div className="services-container">
         {/* Section Header */}
         <div className="services-header">
-          <h2 className="section-title">Our Services</h2>
+          <div className="section-badge">
+            <span className="badge-icon">⚡</span>
+            Services
+          </div>
+          <h2 className="section-title">
+            What I <span className="highlight">Deliver</span>
+          </h2>
           <p className="section-subtitle">
-            Solutions crafted to elevate your digital presence
+            Comprehensive digital solutions tailored to transform your vision into reality
           </p>
         </div>
 
@@ -46,24 +93,39 @@ const Services = () => {
               className={`service-item ${service.side}`}
             >
               <div className="service-content">
-                <h3>{service.title}</h3>
+                <div className="service-header">
+                  <service.Icon />
+                  <h3>{service.title}</h3>
+                </div>
                 <p>{service.description}</p>
+                
+                
+                
+                <button className="service-cta">
+                  Learn More
+                  <ArrowRight size={16} className="cta-arrow" />
+                </button>
               </div>
               
               <div className="service-animation">
                 <div className="animation-container">
-                  <img 
-                    src={service.gif} 
-                    alt={service.title} 
-                    className="service-gif"
-                  />
-                  <div className="decorative-element top-left"></div>
-                  <div className="decorative-element bottom-right"></div>
+                  <div className="gif-wrapper">
+                    <img 
+                      src={service.gif} 
+                      alt={service.title} 
+                      className="service-gif"
+                    />
+                  </div>
+                  <div className="decorative-ring"></div>
+                  <div className="glow-effect"></div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Bottom CTA */}
+        
       </div>
     </section>
   );
