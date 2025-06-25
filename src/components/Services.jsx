@@ -74,11 +74,11 @@ const Services = () => {
         {/* Section Header */}
         <div className="services-header">
           <div className="section-badge">
-            <span className="badge-icon">⚡</span>
+            <span className="badge-icon"></span>
             Services
           </div>
           <h2 className="section-title">
-            What I <span className="highlight">Deliver</span>
+            What We <span className="highlight">Deliver</span>
           </h2>
           <p className="section-subtitle">
             Comprehensive digital solutions tailored to transform your vision into reality
