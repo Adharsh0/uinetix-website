@@ -5,6 +5,7 @@ import './index.css'; // base/global styles if needed
 import About from './components/About';
 import Services from './components/Services';
 import  Contact  from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Contact />
+      <Footer />
     </div>
   );
 }

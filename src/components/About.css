@@ -219,6 +219,12 @@
       line-height: 1;
       
     }
+    .breaking-wrapper1{
+      margin-top: -250px;
+    }
+    .floating-badge1{
+      margin-left: 90px;
+    }
   
     .hero-subtitle1 {
       font-size: 1.1rem;
