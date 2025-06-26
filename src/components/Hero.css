@@ -1,11 +1,11 @@
 .hero {
-  min-height: 80vh;
-  
+  min-height: 70vh;
   padding: 100px 0;
   position: relative;
   overflow: hidden;
   color: white;
   width: 100%;
+  margin-top: 80px;
 }
 
 .hero-container {
@@ -140,7 +140,7 @@
 .sub-heading {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #22c55e;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -161,14 +161,14 @@
 
 .stat-item strong {
   font-size: 1.8rem;
-  color: #22c55e;
+  color: white;
 }
 
 .stat-item span {
   display: block;
   margin-top: 8px;
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #22c55e;
 }
 
 /* Responsive */
@@ -221,6 +221,9 @@
     padding: 0;
     border-radius: 0;
     border: none;
+  }
+  .sub-heading{
+    color: white;
   }
 
   .value-item {

@@ -12,11 +12,12 @@ const Hero = () => {
   
   // Stats data
   const stats = [
-    { value: "2000+", label: "Companies" },
-    { value: "10+", label: "Years Exp." },
-    { value: "800+", label: "Hours of Digital" },
-    { value: "150M+", label: "in Tracked Revenue" }
+    { value: "Empower", label: "Startups & Innovators" },
+    { value: "Build", label: "Impactful Digital Products" },
+    { value: "Foster", label: "Meaningful Partnerships" },
+    { value: "Drive", label: "Sustainable Growth" }
   ];
+  
 
   // Touch handlers
   const handleTouchStart = (e) => {

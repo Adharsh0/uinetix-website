@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, ArrowUp, Heart, Code, Coffee, Zap, Target, Users, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, ArrowUp, Heart, Code, Coffee, Zap, Target, Users, Globe, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -23,9 +23,9 @@ const Footer = () => {
       icon: <Globe className="w-5 h-5" />,
       title: 'Connect',
       items: [
-        { icon: <Mail className="w-4 h-4" />, text: 'hello@example.com', href: 'mailto:hello@example.com' },
-        { icon: <Phone className="w-4 h-4" />, text: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-        { icon: <MapPin className="w-4 h-4" />, text: 'San Francisco, CA', href: '#' }
+        { icon: <Mail className="w-4 h-4" />, text: 'uinetixofficial@gmail.com', href: 'mailto:uinetixofficial@gmail.com' },
+        { icon: <Phone className="w-4 h-4" />, text: '+91 9747883713', href: 'tel:+91 9747883713' },
+        { icon: <MapPin className="w-4 h-4" />, text: 'Trivandrum', href: '#' }
       ]
     },
     {
@@ -33,9 +33,9 @@ const Footer = () => {
       icon: <Users className="w-5 h-5" />,
       title: 'Follow',
       items: [
-        { icon: <Github className="w-4 h-4" />, text: 'GitHub', href: 'https://github.com' },
-        { icon: <Linkedin className="w-4 h-4" />, text: 'LinkedIn', href: 'https://linkedin.com' },
-        { icon: <Twitter className="w-4 h-4" />, text: 'Twitter', href: 'https://twitter.com' }
+        { icon: <Instagram className="w-4 h-4" />, text: 'Instagram', href: 'https://www.instagram.com/uinetix?igsh=MWJraHR0cjQyMGY0cA==' },
+        { icon: <Linkedin className="w-4 h-4" />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/uinetix-solutions-65b436371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+        { icon: <Instagram className="w-4 h-4" />, text: 'Instagram', href: 'https://www.instagram.com/uinetix?igsh=MWJraHR0cjQyMGY0cA==' },
       ]
     },
     {
@@ -53,7 +53,7 @@ const Footer = () => {
   
 
   return (
-    <footer className="footer">
+    <footer className="footer" id='contact'>
       {/* Animated Background Grid */}
       <div className="footer-grid-bg">
         <div className="grid-pattern" />
