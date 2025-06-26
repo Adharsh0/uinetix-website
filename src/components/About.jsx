@@ -27,7 +27,7 @@ const About = () => {
           <div className="hero-left1">
             <div className="floating-badge1">
               <Code2 size={18} />
-              UiNetix Digital Craftsman
+              About UiNetix
             </div>
             <h1 className="hero-title1">
               Breaking<br /><span className="highlight">Boundries</span>

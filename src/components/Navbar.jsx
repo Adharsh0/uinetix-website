@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* Logo Floating */}
           <div className="mobile-logo">
-            <Circle size={18} className="logo-icon" />
+          <img className='logo-mb' src='/mylogo.png' />
             UiNetix
           </div>
 
@@ -110,10 +110,9 @@ const Navbar = () => {
 
         {/* Center Logo */}
         <div className="logo">
-          
+          <img className='logo-desk' src='/mylogo.png' />
           UiNetix
         </div>
-
         {/* Right Side */}
         <ul className="nav-links right">
           <li>
