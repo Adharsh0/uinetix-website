@@ -98,13 +98,6 @@ const Services = () => {
                   <h3>{service.title}</h3>
                 </div>
                 <p>{service.description}</p>
-                
-                
-                
-                <button className="service-cta">
-                  Learn More
-                  <ArrowRight size={16} className="cta-arrow" />
-                </button>
               </div>
               
               <div className="service-animation">
