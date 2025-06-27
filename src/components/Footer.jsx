@@ -25,7 +25,8 @@ const Footer = () => {
       items: [
         { icon: <Mail className="w-4 h-4" />, text: 'uinetixofficial@gmail.com', href: 'mailto:uinetixofficial@gmail.com' },
         { icon: <Phone className="w-4 h-4" />, text: '+91 9747883713', href: 'tel:+91 9747883713' },
-        { icon: <MapPin className="w-4 h-4" />, text: 'Trivandrum', href: '#' }
+        { icon: <Phone className="w-4 h-4" />, text: '+91 7907605167', href: 'tel:+91 7907605167' },
+        // { icon: <MapPin className="w-4 h-4" />, text: 'Trivandrum', href: '#' }
       ]
     },
     {
@@ -35,7 +36,7 @@ const Footer = () => {
       items: [
         { icon: <Instagram className="w-4 h-4" />, text: 'Instagram', href: 'https://www.instagram.com/uinetix?igsh=MWJraHR0cjQyMGY0cA==' },
         { icon: <Linkedin className="w-4 h-4" />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/uinetix-solutions-65b436371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-        { icon: <Instagram className="w-4 h-4" />, text: 'Instagram', href: 'https://www.instagram.com/uinetix?igsh=MWJraHR0cjQyMGY0cA==' },
+        
       ]
     },
     {

@@ -461,3 +461,60 @@
       font-size: 14px;
     }
   }
+  /* Status Bar - Mobile View Changes */
+@media (max-width: 768px) {
+  .status-bar {
+    background: transparent;
+    border: none;
+    padding: 0;
+    backdrop-filter: none;
+    margin-top: 0;
+    box-shadow: none;
+  }
+
+  .status-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .status-availability,
+  .status-time,
+  .status-actions {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    backdrop-filter: none !important;
+    width: 100%;
+  }
+
+  .availability-indicator,
+  .current-time,
+  .back-to-top-btn {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .back-to-top-btn {
+    width: auto;
+    padding: 10px 20px !important;
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .status-grid {
+    gap: 16px;
+  }
+  
+  .current-time {
+    font-size: 24px;
+  }
+  
+  .back-to-top-btn {
+    padding: 8px 16px !important;
+    font-size: 14px;
+  }
+}
